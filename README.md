@@ -1,35 +1,40 @@
-# DevSecOps16 Course Repository
+# Docker - DevOps Course
 
-Welcome to the DevSecOps course repository at BIU! This repository is organized to help you learn DevOps tools and practices through lessons and hands-on labs.
+Welcome to the Docker section of the DevOps course at BIU! In this branch, we will explore the fundamentals of Docker, containerization, and how it fits into modern DevOps practices. Each lesson will be contained in a separate folder, with both the lesson materials and a lab exercise to reinforce your learning.
 
-## Repository Structure
+## What is Docker?
 
-Each subject will have its own dedicated branch where you will find all the related materials, including lessons and labs. The main branch is reserved for general information and course updates, while subject-specific branches will contain all relevant code and resources.
+Docker is a platform that allows you to automate the deployment of applications inside lightweight, portable containers. Containers package an application along with its dependencies, making it easy to run the same application in different environments without compatibility issues.
 
-### Subjects and Branches
+Docker simplifies the process of building, sharing, and running applications across various environments.
 
-- [Docker](https://github.com/hothaifa96/DevSecOps16/tree/docker)
-- [Kubernetes](https://github.com/hothaifa96/DevSecOps16/tree/kubernetes)
-- [Prometheus](https://github.com/hothaifa96/DevSecOps16/tree/prometheus)
-- [Grafana](https://github.com/hothaifa96/DevSecOps16/tree/grafana)
-- [Jenkins](https://github.com/hothaifa96/DevSecOps16/tree/jenkins)
-- [Terraform](https://github.com/hothaifa96/DevSecOps16/tree/terraform)
+## Example: Starting a Node.js Container
 
-## Course Content
+Here's a simple example of how to start a Node.js container using Docker.
 
-Each branch will contain:
+1. Pull the Node.js image from Docker Hub:
 
-- **Lessons:** Detailed notes, examples, and explanations of key concepts.
-- **Labs:** Hands-on exercises to practice and implement what you've learned.
+   ```bash
+   docker pull node
+   docker run -it --name my-node-container -p 3000:3000 node
+   ```
 
-Please check the corresponding branch for each subject as we progress through the course. Each lesson and lab will be uploaded to the respective branch.
+## Structure of this Branch
 
-Feel free to clone the repo and switch between branches as needed:
+Each lesson in this Docker branch will be organized in a separate folder. Every folder will include:
+
+- **Lesson Materials:** Documentation, examples, and explanations.
+- **Lab:** Hands-on exercises for practicing Docker concepts.
+
+Make sure to follow along, complete the labs, and experiment with Docker commands on your local environment.
+
+## Getting Started
+
+Clone the repository and switch to the Docker branch:
 
 ```bash
-# Clone the repository
 git clone https://github.com/hothaifa96/DevSecOps16.git
+cd DevSecOps16
+git checkout docker
 
-# Switch to a specific subject branch
-git checkout <branch-name>
 ```
