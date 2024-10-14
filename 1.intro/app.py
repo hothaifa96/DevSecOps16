@@ -1,5 +1,4 @@
-from flask import Flask,jsonify,request
-# import jsonify
+from flask import *
 
 foods = [
     {'id':1,'name':'pizza','price':60.0},
