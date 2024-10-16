@@ -264,3 +264,9 @@ Example:
 ```bash
 docker run -it myapp:1.0
 ```
+
+# usful links:
+
+1. [docker tutrial](https://www.youtube.com/watch?v=3c-iBn73dDE)
+2. [git tutrial](https://www.youtube.com/watch?v=8JJ101D3knE&t=518s)
+3. [linux commands tutrial](https://www.youtube.com/watch?v=gd7BXuUQ91w)
