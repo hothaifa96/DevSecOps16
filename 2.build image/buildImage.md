@@ -63,12 +63,15 @@ Command to Build and Run:
 ```bash
 docker build -t addexample:1.0 .
 ```
+
 Run the container
+
 ```bash
 docker run -it addexample:1.0
 ```
+
 4. RUN
-The RUN instruction executes commands inside the container during the build process.
+   The RUN instruction executes commands inside the container during the build process.
 
 ```dockerfile
 
@@ -80,20 +83,25 @@ RUN apt-get update && apt-get install -y curl
 This updates the package list and installs curl.
 
 Command to Build and Run:
+
 ```bash
 docker build -t runexample:1.0 .
 ```
+
 Run the container
+
 ```bash
 docker run -it runexample:1.0
 ```
+
 5. ENV
-The ENV instruction sets environment variables inside the container.
+   The ENV instruction sets environment variables inside the container.
 
 ```dockerfile
 FROM ubuntu:latest
 ENV MY_ENV_VAR=myvalue
 ```
+
 This sets the environment variable MY_ENV_VAR to myvalue.
 
 Command to Build and Run:
@@ -209,10 +217,12 @@ This sets /app as the working directory and creates myfile.txt in that directory
 
 Command to Build and Run:
 
-````bash
+```bash
 docker build -t workdirexample:1.0 .
+```
 
 # Run the container
+
 docker run -it workdirexample:1.0
 .dockerignore
 The .dockerignore file helps reduce the size of the Docker context by excluding files or directories that shouldn’t be copied to the image.
@@ -220,10 +230,11 @@ The .dockerignore file helps reduce the size of the Docker context by excluding 
 Example .dockerignore file:
 
 ```bash
-
 node_modules
 .git
 *.log
+```
+
 This prevents the node_modules directory, .git folder, and any .log files from being included in the Docker build context.
 
 Building Docker Images with Tags and Versions
@@ -232,22 +243,24 @@ To build a Docker image with a specific tag and version, use the -t flag:
 ```bash
 
 docker build -t <image_name>:<version> .
+```
+
 Example:
 
 ```bash
-
 docker build -t myapp:1.0 .
+```
+
 Running Docker Containers
 To run a Docker container from an image, use the docker run command:
 
 ```bash
 
 docker run -it <image_name>:<version>
-````
+```
 
 Example:
 
 ```bash
-
 docker run -it myapp:1.0
 ```
