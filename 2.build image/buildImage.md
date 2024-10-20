@@ -270,3 +270,12 @@ docker run -it myapp:1.0
 1. [docker tutrial](https://www.youtube.com/watch?v=3c-iBn73dDE)
 2. [git tutrial](https://www.youtube.com/watch?v=8JJ101D3knE&t=518s)
 3. [linux commands tutrial](https://www.youtube.com/watch?v=gd7BXuUQ91w)
+
+# LABS
+
+1. [lab3](https://github.com/devopsPRO27/Docker-flask-exercise)
+2. [lab4](https://github.com/devopsPRO27/Docker-flask-exercise2)
+3. [lab5](https://github.com/devopsPRO27/docker-aws-exercise)
+4. [lab6](https://github.com/devopsPRO27/flask-and-docker-)
+5. [lab7](https://github.com/devopsPRO27/react-java-mysql-compose-exercise/tree/main/react-java-mysql)
+6. [lab8](https://github.com/devopsPRO27/compose-flask-ngnix-exercise)
